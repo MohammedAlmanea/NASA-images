@@ -3,6 +3,8 @@ package com.example.nasaimages
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.material.MaterialTheme
+import androidx.compose.ui.graphics.toArgb
 import com.example.nasaimages.ui.Screen
 
 import com.example.nasaimages.ui.theme.NASAImagesTheme
@@ -14,6 +16,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             NASAImagesTheme {
+                window.statusBarColor =
+                    MaterialTheme.colors.primary.toArgb()
             Screen()
             }
         }
