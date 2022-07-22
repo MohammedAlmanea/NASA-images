@@ -16,6 +16,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             NASAImagesTheme {
+
                 window.statusBarColor =
                     MaterialTheme.colors.primary.toArgb()
             Screen()
